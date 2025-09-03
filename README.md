@@ -66,7 +66,7 @@ graph TB
 *Real-time fraud prediction with detailed explanations and confidence scores*
 
 ### Transaction Metrics Example
-![Transaction Metrics](screenshots/legitimate-transaction.png.png)
+![Transaction Metrics](screenshots/transaction-metrics.png.png)
 *Clear indication of Transaction Metrics with risk assessment*
 
 ## 🚀 Key Features
