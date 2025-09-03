@@ -54,20 +54,20 @@ graph TB
 ## 🖥️ Dashboard Screenshots
 
 ### Main Dashboard - System Overview
-![Dashboard Overview](screenshots/dashboard-overview.png)
+![Dashboard Overview](screenshots/dashboard-overview.png.png)
 *Professional dashboard showing system performance metrics and key capabilities*
 
 ### Transaction Analysis Interface
-![Transaction Input](screenshots/transaction-input.png)  
+![Transaction Input](screenshots/transaction-input.png.png)  
 *Clean, intuitive sidebar for inputting transaction details*
 
 ### Fraud Detection Results
-![Fraud Results](screenshots/fraud-results.png)
+![Fraud Results](screenshots/fraud-results.png.png)
 *Real-time fraud prediction with detailed explanations and confidence scores*
 
-### Legitimate Transaction Example
-![Legitimate Transaction](screenshots/legitimate-transaction.png)
-*Clear indication of legitimate transactions with risk assessment*
+### Transaction Metrics Example
+![Transaction Metrics](screenshots/legitimate-transaction.png.png)
+*Clear indication of Transaction Metrics with risk assessment*
 
 ## 🚀 Key Features
 
@@ -282,8 +282,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 For questions or collaborations, please reach out:
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
+- **GitHub**: [@kartierklass](https://github.com/kartierklass)
+- **Email**: koushikimridha@kgpian.iitkgp.ac.in
 
 ---
 
