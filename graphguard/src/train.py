@@ -63,7 +63,7 @@ class FraudDetectionTrainer:
         """Save trained models and artifacts"""
         logger.info(f"Saving models to {output_dir}")
         # TODO: Implement saving of:
-        # - model.pkl, encoders.joblib, vecs.npy
+        # - model.pkl, encoders.joblib, graph_stats.joblib
         pass
     
     def load_models(self, model_dir: str):

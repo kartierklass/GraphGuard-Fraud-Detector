@@ -132,6 +132,10 @@ dmypy.json
 # Data files (never commit raw data)
 data/raw/
 data/processed/
+graphguard/data/*.csv
+graphguard/data/*.zip
+graphguard/data/*.parquet
+graphguard/data/*.json
 *.csv
 *.parquet
 *.json

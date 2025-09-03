@@ -16,9 +16,9 @@ This directory contains Jupyter notebooks for the GraphGuard fraud detection pro
 - XGBoost training and tuning
 - Baseline performance evaluation
 
-### 3. `03_build_graph_node2vec.ipynb` - Graph Feature Engineering
+### 3. `03_build_graph_features.ipynb` - Graph Feature Engineering
 - Graph construction from transaction data
-- Node2Vec embedding computation
+- NetworkX-based graph metrics computation (PageRank, Degree, Clustering)
 - Graph statistics calculation
 - Feature extraction for transactions
 

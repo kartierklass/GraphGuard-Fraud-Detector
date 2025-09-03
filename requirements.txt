@@ -3,7 +3,6 @@ numpy
 scikit-learn
 xgboost
 networkx
-node2vec
 shap
 fastapi
 uvicorn[standard]
@@ -12,3 +11,4 @@ streamlit
 joblib
 matplotlib
 python-dotenv
+plotly

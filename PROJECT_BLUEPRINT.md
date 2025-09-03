@@ -56,7 +56,7 @@ label  # 0/1 fraud
 2. **Graph features:**
 
    * Build multi‑relation graph (nodes: accounts/devices/ips; edges: transactions, shared devices/ips).
-   * Compute **Node2Vec (128‑d)** embeddings for nodes + graph stats (degree, pagerank, triangles, clustering).
+   * Compute **graph metrics** for each node using NetworkX. We will focus on features like **PageRank**, **Degree Centrality**, and **Clustering Coefficient**. These stats will be our graph-derived signals.
    * Join per‑txn via src/dst node features and simple aggregates (mean/max across neighbors).
 3. **Hybrid model:**
 
@@ -78,7 +78,7 @@ label  # 0/1 fraud
                            │
                            ├── Train: Baseline XGB → Hybrid XGB (tabular + graph)
                            │
-                    [model.pkl, vecs.npy, encoders]
+                    [model.pkl, encoders]
                            │
                    FastAPI `/score`  <──  Streamlit Analyst Console
                            │                       │
@@ -137,11 +137,11 @@ graphguard/
   notebooks/
     01_eda.ipynb
     02_baseline_xgb.ipynb
-    03_build_graph_node2vec.ipynb
+    03_build_graph_features.ipynb
     04_hybrid_train_eval.ipynb
   src/
     preprocess.py             # encode/impute/feature-gen for tabular
-    graph_features.py         # build graph + node2vec + stats
+    graph_features.py         # build graph + compute graph metrics + stats
     train.py                  # trains baseline+hybrid, saves artifacts
     explain.py                # SHAP + reason template
     schema.py                 # pydantic models for API I/O
@@ -194,14 +194,14 @@ numpy
 scikit-learn
 xgboost
 networkx
-node2vec
 shap
 fastapi
-uvicorn
+uvicorn[standard]
 pydantic
 streamlit
 joblib
 matplotlib
+python-dotenv
 ```
 
 ---
